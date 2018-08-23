@@ -11,7 +11,8 @@ class Login extends CI_Controller {
 
   public function index()
   {
-   $this->load->view('admin/layout/_default'); 
+    $data['content'] = 'admin/login/sign-in';
+    $this->load->view('admin/layout/_login', $data); 
   }
 
 }
